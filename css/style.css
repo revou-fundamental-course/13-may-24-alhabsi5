@@ -1,9 +1,15 @@
 /* ini CSS */
 
-.header1 {
+#header1 {
   text-align: center;
 }
 
+#pilih-mode {
+  text-align: center; 
+  font-size: 25px; 
+  color:blue; 
+  margin:0%
+}
 
 * {box-sizing: border-box}
 
@@ -55,12 +61,7 @@ body, html {
     margin: 0;
 }
 
-.pilih-mode {
-  text-align: center; 
-  font-size: 25px; 
-  color:blue; 
-  margin:0%
-}
+
 
 
 .sec-kel {
