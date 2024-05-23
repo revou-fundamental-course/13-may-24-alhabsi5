@@ -1,0 +1,136 @@
+/* ini CSS */
+
+.header1 {
+  text-align: center;
+}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#luas-segitiga {background-color: rgb(147, 51, 51);}
+#keliling-segitiga {background-color: rgb(179, 174, 72);}
+
+.section-content{
+    background-color: blue;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-content>h3{
+    margin: 0;
+}
+
+.pilih-mode {
+  text-align: center; 
+  font-size: 25px; 
+  color:blue; 
+  margin:0%
+}
+
+
+.sec-kel {
+  color: black;
+  margin: 0;
+}
+
+.formula-img{
+    padding-top: 18px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+#form-luas {
+  color:black; 
+  margin:0%;
+}
+
+#form-keliling {
+  color:black; 
+  margin:0%;
+}
+
+
+#form-input {
+  color: black;
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/*TOMBOL HITUNG RESET*/
+.buttonx {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttonx:hover {background-color: #3e8e41}
+
+.buttonx:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 540px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

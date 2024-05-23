@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<!--header--> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alhabsi Triangle Calculator</title>
+    <!-- PEMANGGIL CSS-->
+    <link rel="stylesheet" href="css/style.css">   
+</head>
+
+<!--content-->
+<body>
+    <header id="header1">
+        <h2>Welcome To My Calculator</h2> 
+        <p>
+            Hai SOBAT welcome to my Triangle Calculator
+        </p>
+    </header>
+
+    <section>
+            <div class="section-content">
+                <h3>KALKULATOR SEGITIGA</h3>
+            </div>
+
+            <p id="pilih-mode"><b>!!! PILIH MODE HITUNG !!!</b></p>
+            <button class="tablink" onclick="openPage('luas-segitiga', this, 'rgb(147, 51, 51)')" id="defaultOpen">LUAS SEGITIGA</button>
+            <button class="tablink" onclick="openPage('keliling-segitiga', this, 'rgb(179, 174, 72)')">KELILING SEGITIGA</button>
+    </section>
+
+
+    <!--content LUAS SEGITIGA-->
+    <section>
+        <section>
+            <section>
+                <section id="luas-segitiga" class="tabcontent">
+                    <h3 style="text-align: center; color: white; margin-top: 0%;">LUAS SEGITIGA</h3>
+                    
+                    <div class="formula-img">
+                        <img src="asset/RUMUS PUTIH SEGITIGA PUTIH 200.png" >
+                    </div>
+
+                    <!-- COLOM RUMUS DAN HITUNG -->
+                    <div class="row">
+                        <div class="column" style="background-color:#aaa;">
+                            <section class="sec-kel">
+                                <p style="font-size: larger;">Rumus Luas Segitiga:</p>
+                                <p style="font-size: 24px; text-align: center;"><b>L = 1/2 x a x t</b></p>
+                                <p style="font-size: larger;">Dimana:</p>
+                                <p style="font-size: larger;">L: Luas</p>
+                                <p style="font-size: larger;">a: Panjang Alas</p>
+                                <p style="font-size: larger;">t: Tinggi </p>
+                            </section>
+                        </div>
+
+
+
+                        <div class="column" style="background-color:#bbb;">
+                            <header>
+                                <h2 style="text-align: center; color:black">Hitung Luas Segitiga:</h2>
+                                </header>
+                    
+                            <!-- INPUTAN DAN TOMBOL HITUNG -->
+                            <form id="form-luas">
+                                <section>
+                                    <div>
+                                        <label for="Alas"><b>Alas:</b></label>
+                                        <input type="number" placeholder="Masukkan Nilai Panjang Alas" id="alas">
+                                    </div>
+                                    <div>
+                                        <label for="Tinggi"><b>Tinggi:</b></label>
+                                        <input type="number" placeholder="Masukkan Nilai Tinggi" id="tinggi">
+                                    </div>
+                                    <div>
+                                        <label><b>LUAS SEGITIGA:</b></label>
+                                        <input type="number" placeholder="Hasil Luas Segitiga" id="luas" readonly> 
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <button class="buttonx" type="button" onclick="calculateluas();" id="hitung-luas">Hitung</button>
+                                    <button class="buttonx" type="button" onclick="resetLuas();" id="reset-hitung-luas">Reset</button>
+                                </section>                             
+                            </form>    
+                        </div>
+                      </div>
+                    
+                    <!-- hr itu garis pembatas -->
+                    <hr />           
+            </section>
+        </section>
+    </section>
+
+
+    <!--content KELILING SEGITIGA-->
+    <section>
+        <section>
+            <section>
+                <section id="keliling-segitiga" class="tabcontent">
+                    <h3 style="text-align: center; color:black; margin-top: 0%;">KELILING SEGITIGA</h3>
+                    
+                    <div class="formula-img">
+                        <img src="asset/RUMUS KELILING SEGITIGA PUTIH 200.png" >
+                    </div>
+
+                    <!-- COLOM RUMUS DAN HITUNG -->
+                    <div class="row">
+                        <div class="column" style="background-color:#aaa;">
+                            <section class="sec-kel">
+                                <p style="font-size: larger;">Rumus Keliling Segitiga:</p>
+                                <p style="font-size: 24px; text-align: center;"><b>K = S1 + S2 + S3</b></p>
+                                <p style="font-size: larger;">Dimana:</p>
+                                <p style="font-size: larger;">K : Keliling</p>
+                                <p style="font-size: larger;">S1: Sisi A</p>
+                                <p style="font-size: larger;">S2: Sisi B</p>
+                                <p style="font-size: larger;">S3: Sisi C</p>
+                            </section>
+                        </div>
+
+                        <div class="column" style="background-color:#bbb;">
+                                <header>
+                                <h2 style="text-align: center; color:black">Hitung Keliling Segitiga:</h2>
+                                </header>
+                    
+                            <!-- INPUTAN DAN TOMBOL HITUNG -->
+                            <form id="form-keliling">
+                                <section >
+                                    <div>
+                                        <label><b>S1:</b></label>
+                                        <input type="number" placeholder="Masukkan Nilai Sisi A" id="s1">
+                                    </div>
+                                    <div>
+                                        <label><b>S2:</b></label>
+                                        <input type="number" placeholder="Masukkan Nilai Sisi B" id="s2">
+                                    </div>
+                                    <div>
+                                        <label><b>S3:</b></label>
+                                        <input type="number" placeholder="Masukkan Nilai Sisi C" id="s3">
+                                    </div>
+                                    <div>
+                                        <label><b>HASIL KELILING SEGITIGA:</b></label>
+                                        <input type="number" placeholder="Hasil Keliling Segitiga" id="keliling" readonly> 
+                                    </div>
+                                </section>
+        
+                                <button class="buttonx" type="button" onclick="calculateKeliling();" id="hitung-keliling">Hitung</button>
+                                <button class="buttonx" type="button" onclick="resetKeliling();" id="reset-hitung-keliling">Reset</button>
+                            </form>    
+                        </div>
+                      </div>                                   
+                    
+                    <!-- hr itu garis pembatas -->
+                    <hr />
+        
+                           
+            </section>
+        </section>
+    </section>
+
+<!-- PEMANGGIL JAVA SCRIPT-->
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
